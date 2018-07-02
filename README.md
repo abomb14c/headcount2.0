@@ -31,8 +31,8 @@ Creat-React-App - The web framework used
 
 ![](https://imgur.com/a/KZxoJNe)
 
-![screenshot 2](src/assets/headcount-screen-shot-2.png)
+![screenshot 2](src/assets/head-count-screen-shot-2.png)
 
-![screenshot 3](src/assets/headcount-screen-shot-3.png)
+![screenshot 3](src/assets/head-count-screen-shot-3.png)
 
 https://imgur.com/a/KZxoJNe

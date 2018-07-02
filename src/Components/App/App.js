@@ -21,13 +21,19 @@ class App extends Component {
   submitSearch = (search) => {
     const searchEntry = this.props.districts.findAllMatches(search);
     
-    this.setState({searchResult: searchEntry});
+    this.setState({schoolStats: searchEntry});
   }
 
   selectCard = (location) => {
     const foundCard = this.props.districts.findByName(location);
-    foundCard.selected = !foundCard.selected;
-    this.setSelected();
+    if (this.state.selectedCards.length < 2) {
+      foundCard.selected = !foundCard.selected;
+      this.setSelected();
+    } else if (this.state.selectedCards.length === 2 && 
+                foundCard.selected === true) {
+      foundCard.selected = !foundCard.selected;
+      this.setSelected();
+    }
   }
 
   setSelected = () => {
